@@ -27,7 +27,7 @@ pipeline {
         sh 'git stash'
         echo 'Checking Out Development'
         sh 'git checkout development'
-        sh 'git pull'
+        sh 'git pull origin'
         echo 'Checking Out Master'
         sh 'git checkout master'
         echo 'Merging Development into Master'
